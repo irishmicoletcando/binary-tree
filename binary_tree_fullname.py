@@ -86,6 +86,30 @@ class BinarySearchTreeNode:
         return self.data
       return self.right.find_max()
 
+    def delete(self, val):
+      # checks left subtree
+      if val < self.data:
+        if self.left:
+          self.left = self.left.delete(val)
+      # checks right subtree
+      elif val > self.data:
+        if self.right:
+          self.right = self.right.delete(val)
+      else:
+        if self.left is None and self.right is None:
+            return None
+        elif self.left is None:
+            return self.right
+        elif self.right is None:
+            return self.left
+
+        min_val = self.right.find_min()
+        self.data = min_val
+        self.right = self.right.delete(min_val)
+
+      return self
+
+
 def build_letter_tree(fullname_letters):
   root = BinarySearchTreeNode(fullname_letters[0])
   for i in range(1, len(fullname_letters)):
@@ -99,3 +123,5 @@ if __name__ == '__main__':
   print(f"Pre Order Traversal: {letters_tree.pre_order_traversal()}")
   print(f"Post Order Traversal: {letters_tree.post_order_traversal()}")
   print(f"Is letter R in my fullname? {letters_tree.search('R')}")
+  print(f"Minimum Value: {letters_tree.find_min()}")
+  print(f"Maximum Value: {letters_tree.find_max()}")
