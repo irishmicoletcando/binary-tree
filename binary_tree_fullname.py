@@ -66,3 +66,4 @@ if __name__ == '__main__':
   letters_tree = build_letter_tree(letters)
   print(letters_tree.in_order_traversal())
   print(letters_tree.pre_order_traversal())
+  print(letters_tree.post_order_traversal())
