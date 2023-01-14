@@ -21,9 +21,8 @@ class BinarySearchTreeNode:
           self.right = BinarySearchTreeNode(data)
     
     def in_order_traversal(self):
-      elements =[]
-
-      return elements
+      fullname_letters =[]
+      return fullname_letters
 
 
 
