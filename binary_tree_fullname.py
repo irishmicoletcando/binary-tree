@@ -14,6 +14,7 @@ class BinarySearchTreeNode:
           self.left.add_child(data)
         else:
           self.left = BinarySearchTreeNode(data)
+      # right subtree
       else:
         if self.right:
           self.right.add_child(data)
@@ -22,11 +23,14 @@ class BinarySearchTreeNode:
     
     def in_order_traversal(self):
       fullname_letters =[]
-      # visit left tree
+      # visit left subtree
       if self.left:
         fullname_letters += self.left.in_order_traversal()
       # visit base node
       fullname_letters.append(self.data)
+      # visit right subtree
+      if self.right:
+        fullname_letters += self.right.in_order_traversal()
       return fullname_letters
 
 
