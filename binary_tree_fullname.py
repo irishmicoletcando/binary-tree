@@ -36,7 +36,8 @@ class BinarySearchTreeNode:
 
 def build_letter_tree(fullname_letters):
   root = BinarySearchTreeNode(fullname_letters[0])
-
+  for i in range(1, len(fullname_letters)):
+    root.add_child(fullname_letters[i])
   return root
 
 if __name__ == '__main__':
