@@ -28,5 +28,8 @@ class BinarySearchTreeNode:
     if self.left:
       elements += self.left.in_order_traversal()
 
-      
+    # visit base node
+    elements.append(self.data)
+
+    
     return elements
