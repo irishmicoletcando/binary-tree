@@ -34,6 +34,10 @@ class BinarySearchTreeNode:
       return fullname_letters
 
 
+def build_letter_tree(fullname_letters):
+  root = BinarySearchTreeNode(fullname_letters[0])
+
+  return root
 
 if __name__ == '__main__':
   letters = ["I", "R", "I", "S", "H", "M", "I", "C", "O", "L", "E", "C", "A", "N," "D", "O"]
