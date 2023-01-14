@@ -58,6 +58,13 @@ class BinarySearchTreeNode:
     def search(self, val):
       if self.data == val:
         return True
+      # value might be in left subtree
+      if val < self.data:
+        # checks if left subtree has value
+        if self.data:
+          pass
+        else:
+          return False
 
 def build_letter_tree(fullname_letters):
   root = BinarySearchTreeNode(fullname_letters[0])
