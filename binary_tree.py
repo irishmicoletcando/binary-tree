@@ -15,6 +15,7 @@ class BinarySearchTreeNode:
         self.left.add_child(data)
       else:
         self.left = BinarySearchTreeNode(data)
+    # right subtree
     else:
       if self.right:
         self.right.add_child(data)
@@ -46,7 +47,7 @@ def build_tree(elements):
 
   return root
 
-if __name__ == 'main':
+if __name__ == '__main__':
   numbers = [17, 4, 1, 20, 9, 23, 18, 34]
   numbers_tree = build_tree(numbers)
   print(numbers_tree.in_order_traversal())
