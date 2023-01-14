@@ -74,6 +74,10 @@ class BinarySearchTreeNode:
         else:
           return False
 
+    # since left subtree has lower values
+    def find_min(self):
+      return self.left.find_min()
+
 def build_letter_tree(fullname_letters):
   root = BinarySearchTreeNode(fullname_letters[0])
   for i in range(1, len(fullname_letters)):
