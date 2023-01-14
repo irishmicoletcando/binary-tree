@@ -64,6 +64,10 @@ class BinarySearchTreeNode:
       else:
         return False
 
+  # since left subtree has lesser value
+  def find_min(self):
+    return self.left.find_min()
+
 def build_tree(elements):
   root = BinarySearchTreeNode(elements[0])
 
