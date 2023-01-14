@@ -62,7 +62,7 @@ class BinarySearchTreeNode:
       if val < self.data:
         # checks if left subtree has value
         if self.data:
-          pass
+          return self.left.search(val)
         else:
           return False
 
