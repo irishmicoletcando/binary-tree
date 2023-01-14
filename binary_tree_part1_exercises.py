@@ -105,3 +105,5 @@ if __name__ == '__main__':
   print(numbers_tree.search(20))
   print(numbers_tree.find_min())
   print(numbers_tree.find_max())
+  print(numbers_tree.calculate_sum())
+  print(numbers_tree.pre_order_traversal())
