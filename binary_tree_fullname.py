@@ -55,6 +55,8 @@ class BinarySearchTreeNode:
       fullname_letters.append(self.data)
       return fullname_letters
 
+    def search(self, val):
+
 def build_letter_tree(fullname_letters):
   root = BinarySearchTreeNode(fullname_letters[0])
   for i in range(1, len(fullname_letters)):
