@@ -6,3 +6,5 @@ class BinarySearchTreeNode:
 
   
   def add_child(self, data):
+    if data == self.data:
+      return
