@@ -10,4 +10,7 @@ class BinarySearchTreeNode:
 
       # left subtree
       if data < self.data:
-        self.left = BinarySearchTreeNode(data)
+        if self.data:
+          self.left.add_child(data)
+        else:
+          self.left = BinarySearchTreeNode(data)
