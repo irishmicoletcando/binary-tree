@@ -42,6 +42,14 @@ class BinarySearchTreeNode:
     if self.data == val:
       return True
 
+    # value might be in left subtree
+    if val < self.data:
+      # checks if left subtree has value
+      if self.data:
+        pass
+      else:
+        return False
+
 def build_tree(elements):
   root = BinarySearchTreeNode(elements[0])
 
