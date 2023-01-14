@@ -125,3 +125,5 @@ if __name__ == '__main__':
   print(f"Is letter R in my fullname? {letters_tree.search('R')}")
   print(f"Minimum Value: {letters_tree.find_min()}")
   print(f"Maximum Value: {letters_tree.find_max()}")
+  letters_tree.delete("I")
+  print(f"After deleting letter I, {letters_tree.in_order_traversal()}")
