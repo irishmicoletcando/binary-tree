@@ -38,6 +38,9 @@ class BinarySearchTreeNode:
       # visit left subtree
       if self.left:
         fullname_letters += self.left.pre_order_traversal()
+      # visit left subtree
+      if self.right:
+        fullname_letters += self.right.pre_order_traversal()
       return fullname_letters
 
 def build_letter_tree(fullname_letters):
