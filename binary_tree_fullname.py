@@ -119,6 +119,7 @@ def build_letter_tree(fullname_letters):
 if __name__ == '__main__':
   letters = ["I", "R", "I", "S", "H", "M", "I", "C", "O", "L", "E", "C", "A", "N," "D", "O"]
   letters_tree = build_letter_tree(letters)
+  print(f"Name: IRISH MICOLE CANDO")
   print(f"In Order Traversal: {letters_tree.in_order_traversal()}")
   print(f"Pre Order Traversal: {letters_tree.pre_order_traversal()}")
   print(f"Post Order Traversal: {letters_tree.post_order_traversal()}")
@@ -126,4 +127,4 @@ if __name__ == '__main__':
   print(f"Minimum Value: {letters_tree.find_min()}")
   print(f"Maximum Value: {letters_tree.find_max()}")
   letters_tree.delete("I")
-  print(f"After deleting letter I, {letters_tree.in_order_traversal()}")
+  print(f"After deleting letter I, the new in order traversal is {letters_tree.in_order_traversal()}")
