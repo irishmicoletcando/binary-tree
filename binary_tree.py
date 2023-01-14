@@ -61,7 +61,8 @@ class BinarySearchTreeNode:
   def delete(self, val):
     # checks left subtree
     if val < self.data:
-    
+      if self.left:
+        self.left = self.left.delete(val)
       
 def build_tree(elements):
   root = BinarySearchTreeNode(elements[0])
