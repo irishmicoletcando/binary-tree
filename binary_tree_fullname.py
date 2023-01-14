@@ -19,6 +19,13 @@ class BinarySearchTreeNode:
           self.right.add_child(data)
         else:
           self.right = BinarySearchTreeNode(data)
+    
+    def in_order_traversal(self):
+      elements =[]
+
+      return elements
+
+
 
 if __name__ == '__main__':
   letters = ["I", "R", "I", "S", "H", "M", "I", "C", "O", "L", "E", "C", "A", "N," "D", "O"]
