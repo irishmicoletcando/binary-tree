@@ -89,6 +89,11 @@ class BinarySearchTreeNode:
     if self.right:
       elements += self.right.pre_order_traversal()
     return elements
+
+  def post_order_traversal(self):
+    elements = []
+    return elements
+
     
 def build_tree(elements):
   root = BinarySearchTreeNode(elements[0])
