@@ -66,6 +66,8 @@ class BinarySearchTreeNode:
 
   # since left subtree has lesser value
   def find_min(self):
+    if self.left is None:
+      return self.data
     return self.left.find_min()
 
 def build_tree(elements):
