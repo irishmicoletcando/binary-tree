@@ -22,6 +22,9 @@ class BinarySearchTreeNode:
     
     def in_order_traversal(self):
       fullname_letters =[]
+      # visit left tree
+      if self.left:
+        fullname_letters += self.left.in_order_traversal()
       return fullname_letters
 
 
