@@ -80,6 +80,12 @@ class BinarySearchTreeNode:
         return self.data
       return self.left.find_min()
 
+    # since right subtree has higher values
+    def find_max(self):
+      if self.right is None:
+        return self.data
+      return self.right.find_max()
+
 def build_letter_tree(fullname_letters):
   root = BinarySearchTreeNode(fullname_letters[0])
   for i in range(1, len(fullname_letters)):
