@@ -58,6 +58,18 @@ class BinarySearchTreeNode:
       else:
         return False
 
+  # since left subtree has lower values
+  def find_min(self):
+    if self.left is None:
+      return self.data
+    return self.left.find_min()
+
+  # since right subtree has higher values
+  def find_max(self):
+    if self.right is None:
+      return self.data
+    return self.right.find_max()
+
   def delete(self, val):
     # checks left subtree
     if val < self.data:
