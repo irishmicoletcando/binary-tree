@@ -25,6 +25,8 @@ class BinarySearchTreeNode:
       # visit left tree
       if self.left:
         fullname_letters += self.left.in_order_traversal()
+      # visit base node
+      fullname_letters.append(self.data)
       return fullname_letters
 
 
