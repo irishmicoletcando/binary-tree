@@ -43,6 +43,10 @@ class BinarySearchTreeNode:
         fullname_letters += self.right.pre_order_traversal()
       return fullname_letters
 
+    def post_order_traversal(self):
+      fullname_letters = []
+      return fullname_letters
+
 def build_letter_tree(fullname_letters):
   root = BinarySearchTreeNode(fullname_letters[0])
   for i in range(1, len(fullname_letters)):
