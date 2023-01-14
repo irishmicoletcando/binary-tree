@@ -42,3 +42,5 @@ def build_letter_tree(fullname_letters):
 
 if __name__ == '__main__':
   letters = ["I", "R", "I", "S", "H", "M", "I", "C", "O", "L", "E", "C", "A", "N," "D", "O"]
+  letters_tree = build_letter_tree(letters)
+  print(letters_tree.in_order_traversal())
