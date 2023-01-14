@@ -86,3 +86,4 @@ if __name__ == '__main__':
   print(f"In Order Traversal: {letters_tree.in_order_traversal()}")
   print(f"Pre Order Traversal: {letters_tree.pre_order_traversal()}")
   print(f"Post Order Traversal: {letters_tree.post_order_traversal()}")
+  print(f"Is letter R in my fullname? {letters_tree.search('R')}")
