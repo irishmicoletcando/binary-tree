@@ -58,6 +58,11 @@ class BinarySearchTreeNode:
       else:
         return False
 
+  def delete(self, val):
+    # checks left subtree
+    if val < self.data:
+    
+      
 def build_tree(elements):
   root = BinarySearchTreeNode(elements[0])
 
